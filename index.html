@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Smith</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+</head>
+<body>
+    
+<section class="header">
+    <div class="con"> 
+        <div class="logo">
+            <img src="img0.png">
+        </div>
+        <nav class="navbar active">
+            <div class="flex"> 
+                <div action="" class="search-bar-container">
+                    <input type="text" id="search-bar" placeholder="Search here...">
+                    <label for="search-bar" class="fas-fa-search"></label>
+                    <button id="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+        
+                <div class="location-bar">
+                    <input type="text" class="location-input" placeholder="Enter your location">
+                    <a href="https://www.google.com/maps"><button id="location-btn"></button></a>
+                    <i class="fas fa-map-marker-alt"></i> </button>
+                </div>
+        
+                <div class="container">
+                    <select id="language-dropdown" >
+                        <option value="en">English</option>  
+                        <option value="hi">Hindi</option>
+                        <option value="mr">Marathi</option>
+                        <option value="te">Telugu</option>
+                        <option value="od">Odia</option>
+                        <option value="bn">Bengali</option>
+                        <option value="ur">Urdu</option>
+                        <option value="ta">Tamil</option>
+                        <option value="sd">Sindhi</option>
+                        <option value="sa">Sanskrit</option>
+                        <option value="pa">Punjabi</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="kn">Konkani</option>
+                        <option value="ka">Kannada</option>
+                        <option value="as">Assamese</option>
+                        <option value="gu">Gujarati</option>
+                    </select>
+                    <button id="language-button">
+                        <i class="fa-solid fa-globe fa-xl"></i></button>
+                </div>
+
+                <div class="container profile">
+                    <button id="profile-button">
+                        <i class="fas fa-user-circle"></i></button>
+                </div>
+                <div class="model-container " id="x">
+                    <div class="model ">
+                        <a href=./info.html><button id="My-info"> Update Profile</button></a>  
+                        <a href=./faq.html><button id="FAQ">FAQs</button></a>
+                        <a href=./help.html><button id="help">Help</button></a> 
+                        <a href=./privacy.html><button id="privacy and security">Privacy and Security</button></a>
+                        <a href=./tandc.html><button id="terms">Terms and Conditions</button></a>
+                        <button id="sign-out">Sign out</button>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>               
+                <div>
+                    <div id="cart-button">
+                        <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+        <div id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</section>
+
+
+<section class="home" id="home">
+   <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class="box swiper-slide s1"> 
+                <a href="./ser1.html"><img src="img1.jpg" class="mop">  
+                <div class="flex">
+                    <div class="overlay_text">
+                        <h3>Mopping and Brooming</h3>
+                    </div>
+                </a>
+                </div>
+        
+            </div>
+            <div class="box swiper-slide s2">
+                <a href="./ser2.html"><img src="img2.jpg" class="cloth">
+                <div class="flex">
+                    <div class="overlay_text">
+                        <h3>Laundary</h3>
+                    </div>
+                </div>
+                </a>
+                
+            </div>
+            <div class="box swiper-slide s3">
+                <a href="./ser3.html">
+                    <img src="img3.jpg" class="bartan">
+                <div class="flex"> 
+                    <div class="overlay_text">
+                        <h3>Dish Cleaning</h3>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="box swiper-slide s4">
+                <a href="./ser4.html"><img src="img4.jpg" class="cook">
+                    <div class="flex">
+                        <div class="overlay_text">
+                            <h3>Cooking</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+
+<section class="service" id="service">
+    <h2>Our services</h2>
+    <div class = "btn-container">
+        <div class="btn-c2" type="button">
+            <div class = "ser btn1" type ='button' >
+                <a href="./ser1.html"><img src="img5.jpeg"></a>
+            </div>
+            <p>mop and broom</p> 
+        </div>
+        <div class="btn-c2" type="button">
+            <div class = "ser btn2" type ='button' >
+                <a href="./ser2.html"><img src="img6.jpeg"></a>
+            </div>
+            <p>Laundry</p> 
+        </div>
+        <div class="btn-c2" type="button">
+            <div class = "ser btn3" type ='button' >
+                <a href="./ser3.html"><img src="img7.jpeg">
+                </div></a>
+            <p>Dish washing</p> 
+        </div>
+        <div class="btn-c2" type="button">
+            <div class = "ser btn4" type ='button' >
+                <a href="./ser4.html"><img src="img8.jpeg"></a>
+            </div>
+            <p>cooking</p> 
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <div class="row">
+       <div class="image">
+          <img src="img13.png" alt="">
+       </div>
+       <div class="content">
+          <h3>Verified Professionals</h3>
+          <p>Our team is comprised entirely of verified professionals, ensuring you receive exceptional service from qualified experts you can trust</p>
+       </div>
+    </div>
+ 
+    <div class="row revers">
+       <div class="image">
+          <img src="img14.png" alt="">
+       </div>
+       <div class="content">
+          <h3>Easy on Pocket</h3>
+          <p>Get the value you deserve without breaking the bank. Our services are budget-friendly, offering exceptional quality at affordable prices.</p>
+       </div>
+    </div>
+ 
+    <div class="row">
+       <div class="image">
+          <img src="img15.jpg" alt="">
+       </div>
+       <div class="content">
+          <h3>Environment Friendly Products</h3>
+          <p>We're committed to creating a positive impact on the planet. That's why we offer a range of eco-friendly products that are kind to the Earth. </p>
+       </div>
+    </div>
+ 
+ </section>
+
+ <section class="review" id="reviews">
+    <h2>Reviews from our Clients</h2>
+    <div class="swiper home-slider">
+         <div class="swiper-wrapper">
+             <div class="box swiper-slide s1"> 
+                 <img src="img16.jpg" class="mop">  
+                 <div class="flex">
+                     <div class="overlay_text">
+                         <p>"Excellent service! Fast, friendly, and efficient."  <br> -Vaidehi</p>
+                     </div>
+                 </div>
+         
+             </div>
+             <div class="box swiper-slide s2">
+                 <img src="img16.jpg" class="cloth">
+                 <div class="flex">
+                     <div class="overlay_text">
+                        <p>"Pleasantly surprised by the great customer service." <br>-Surya</p>
+                     </div>
+                 </div>
+                 
+             </div>
+             <div class="box swiper-slide s3">
+                 <img src="img16.jpg" class="bartan">
+                 <div class="flex"> 
+                     <div class="overlay_text">
+                        <p>"Exactly what I needed, done perfectly." <br> -Swara</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="box swiper-slide s4">
+                 <img src="img16.jpg" class="cook">
+                 <div class="flex">
+                     <div class="overlay_text">
+                        <p>"Hidden gem! Great service, unexpected delight." <br> -Aniket</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+<section class="footer">
+    <div class="box-container">
+       <div class="box">
+          <a href="tel:1234567890"><i class="fas fa-phone"></i> +123-456-7890</a>
+          <a href="tel:1112223333"><i class="fas fa-phone"></i> +111-222-3333</a>
+          <a href="mailto:srivastavariashabh2001@gmail.com"><i class="fas fa-envelope"></i> xyz@gmail.com</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> mumbai, india - 400104</a>
+       </div>
+ 
+       <div class="box">
+          <a href="#home">home</a>
+          <a href="#service">services</a>
+          <a href="#about">about us</a>
+          <a href="#reviews">reviews</a>
+       </div>
+ 
+       <div class="box">
+          <a href="https://www.facebook.com/">facebook <i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/?lang=en">twitter <i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/">instagram <i class="fab fa-instagram"></i></a>
+          <a href="https://in.linkedin.com/">linkedin <i class="fab fa-linkedin"></i></a>
+       </div>
+    </div>
+ 
+    <div class="credit">&copy; copyright @ 2024 by Home Smith | all rights reseved!</div>
+ 
+ </section>
+ 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="firebase.js"></script>
+
+
+</body>
+</html>
